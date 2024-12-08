@@ -1,23 +1,30 @@
 import streamlit as st
 from PIL import Image
 
+# Page configuration
 st.set_page_config(
     page_title="Airbnb Analytics",
     page_icon="🏠",
     layout="wide",
     initial_sidebar_state="expanded"
 )
-# Airbnb logo
-st.image("airbnb_logo.png", width=150)  
 
-#The title
-st.markdown("<h1 style='text-align: center; color: #FF5A5F;'>Welcome to Airbnb Analytics🏠</h1>", unsafe_allow_html=True)
+# Title with background and logo
+st.markdown("""
+<div style="display: flex; justify-content: space-between; align-items: center; background-color: #FFEDEB; padding: 10px; border-radius: 5px;">
+    <h1 style="color: #FF5A5F; margin: 0;">Welcome to Airbnb Analytics🏠</h1>
+    <img src="airbnb_logo.png" style="height: 60px;">
+</div>
+""", unsafe_allow_html=True)
+
+# Introduction
 st.markdown("""
 <div style='text-align: center;'>
     <p style="font-size: 18px;">Analyze Airbnb trends, explore data insights, and predict prices using this app.</p>
 </div>
 """, unsafe_allow_html=True)
 
+# Navigation instructions
 st.write("### Select a page from the sidebar to get started:")
 st.markdown("""
 <ul>
@@ -26,5 +33,4 @@ st.markdown("""
 </ul>
 """, unsafe_allow_html=True)
 
-image = Image.open('airbnb.webp')
-st.image("airbnb.webp", caption="Airbnb Analytics Dashboard", use_column_width=True)
+#st.image("airbnb_hero_image.jpg", caption="Explore the world of Airbnb", use_column_width=True)  # Replace with a relevant image
