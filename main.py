@@ -9,6 +9,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+st.image("airbnb_logo.png", style="height: 60px;")
 # Title with background and logo
 st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center; background-color: #FFEDEB; padding: 10px; border-radius: 5px;">
