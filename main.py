@@ -33,4 +33,4 @@ st.markdown("""
 </ul>
 """, unsafe_allow_html=True)
 
-#st.image("airbnb_hero_image.jpg", caption="Explore the world of Airbnb", use_column_width=True)  # Replace with a relevant image
+st.image("airbnb_logo.png", caption="Airbnb", use_column_width=True)  # Replace with a relevant image
