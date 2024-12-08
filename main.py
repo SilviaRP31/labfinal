@@ -8,7 +8,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 # Airbnb logo
-st.image("airbnb_logo.png", width=200)  
+st.image("airbnb_logo.png", width=150)  
 
 #The title
 st.markdown("<h1 style='text-align: center; color: #FF5A5F;'>Welcome to Airbnb Analytics🏠</h1>", unsafe_allow_html=True)
