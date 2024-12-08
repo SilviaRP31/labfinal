@@ -7,17 +7,24 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+# Airbnb logo
+st.image("airbnb_logo.png", width=200)  
 
 #The title
-st.title("Welcome to Airbnb Analytics")
+st.markdown("<h1 style='text-align: center; color: #FF5A5F;'>Welcome to Airbnb Analytics🏠</h1>", unsafe_allow_html=True)
 st.markdown("""
-This application helps you analyze Airbnb data, explore trends, and predict apartment prices.
-Choose a page from the sidebar to get started:
-- **Data Exploration**: Visualize key insights and trends.
-- **Price Prediction**: Predict prices based on property details.
-""")
+<div style='text-align: center;'>
+    <p style="font-size: 18px;">Analyze Airbnb trends, explore data insights, and predict prices using this app.</p>
+</div>
+""", unsafe_allow_html=True)
+
+st.write("### Select a page from the sidebar to get started:")
+st.markdown("""
+<ul>
+    <li><b>Data Exploration</b>: Visualize Airbnb data trends and insights.</li>
+    <li><b>Price Prediction</b>: Estimate prices based on property details.</li>
+</ul>
+""", unsafe_allow_html=True)
 
 image = Image.open('airbnb.webp')
 st.image("airbnb.webp", caption="Airbnb Analytics Dashboard", use_column_width=True)
-
-st.write("### Get started by selecting a page from the sidebar!")
