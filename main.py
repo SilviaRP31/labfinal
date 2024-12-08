@@ -14,7 +14,6 @@ st.image("airbnb_logo.png", style="height: 60px;")
 st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center; background-color: #FFEDEB; padding: 10px; border-radius: 5px;">
     <h1 style="color: #FF5A5F; margin: 0;">Welcome to Airbnb Analytics🏠</h1>
-    <img src="airbnb_logo.png" style="height: 60px;">
 </div>
 """, unsafe_allow_html=True)
 
